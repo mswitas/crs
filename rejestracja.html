@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rejestracja - XXI Konferencja</title>
+    <meta
+      name="description"
+      content="Informacje o rejestracji na XXI Konferencję Nowoczesne Technologie."
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        try {
+          document.documentElement.dataset.theme =
+            window.localStorage.getItem("theme") || "dark";
+        } catch (error) {
+          document.documentElement.dataset.theme = "dark";
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css?v=4" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a
+        class="brand"
+        href="index.html#top"
+        aria-label="Strona główna konferencji"
+      >
+        <span class="brand-mark"></span>
+        <span>XXI Konferencja</span>
+      </a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Otwórz menu"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="header-actions">
+        <nav id="main-nav" class="nav" aria-label="Nawigacja główna">
+          <a href="index.html#news">News</a>
+          <a href="index.html#rejestracja">Rejestracja</a>
+          <a href="index.html#koszty">Koszty</a>
+          <a href="index.html#faq">Informacje</a>
+        </nav>
+        <button
+          class="theme-toggle"
+          type="button"
+          aria-label="Przełącz tryb jasny i ciemny"
+          aria-pressed="false"
+        >
+          <span class="theme-icon theme-icon-sun" aria-hidden="true"></span>
+          <span class="theme-switch-track" aria-hidden="true">
+            <span class="theme-switch-thumb"></span>
+          </span>
+          <span class="theme-icon theme-icon-moon" aria-hidden="true"></span>
+          <span class="theme-toggle-text sr-only">Tryb jasny</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top" class="subpage-main">
+      <section class="section registration-page">
+        <div class="section-heading">
+          <h1 class="eyebrow">Rejestracja</h1>
+          <p class="section-title">
+            Tu zarejestrujesz się na XXI Konferencję Nowoczesne Technologie.
+          </p>
+        </div>
+
+        <div class="registration-layout">
+          <section class="content-panel registration-notice">
+            <span class="status-pill">Aktualnie nieczynna</span>
+            <h2>Rejestracja zostanie uruchomiona w późniejszym terminie</h2>
+            <p>
+              Formularz zgłoszeniowy nie jest jeszcze dostępny. Po uruchomieniu
+              rejestracji w tym miejscu pojawi się formularz dla uczestników
+              konferencji.
+            </p>
+            <p>
+              Zachęcamy do śledzenia aktualności na stronie. Wkrótce opublikujemy
+              szczegółowy program, informacje o prelegentach oraz pełne zasady
+              udziału.
+            </p>
+            <a class="button button-secondary" href="index.html#news"
+              >Wróć do aktualności</a
+            >
+          </section>
+
+          <aside class="content-panel registration-aside">
+            <h2>Najważniejsze informacje</h2>
+            <dl class="info-list">
+              <div>
+                <dt>Termin</dt>
+                <dd>20-22 listopada 2026</dd>
+              </div>
+              <div>
+                <dt>Miejsce</dt>
+                <dd>Zespół Szkół Technicznych w Radomiu</dd>
+              </div>
+              <div>
+                <dt>Tematyka</dt>
+                <dd>Cyfrowa szkoła i administracja publiczna</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        XXI Konferencja - Nowoczesne Technologie w Służbie Cyfrowej Szkoły i
+        Administracji Publicznej
+      </p>
+      <a href="index.html#top">Wróć na stronę główną</a>
+    </footer>
+    <script>
+      const themeToggle = document.querySelector(".theme-toggle");
+      const themeToggleText = document.querySelector(".theme-toggle-text");
+      const menuToggle = document.querySelector(".menu-toggle");
+      const headerActions = document.querySelector(".header-actions");
+
+      function saveTheme(theme) {
+        try {
+          window.localStorage.setItem("theme", theme);
+        } catch (error) {
+          return;
+        }
+      }
+
+      function setTheme(theme) {
+        document.documentElement.dataset.theme = theme;
+        saveTheme(theme);
+        const isLight = theme === "light";
+        themeToggle.setAttribute("aria-pressed", String(isLight));
+        themeToggleText.textContent = isLight ? "Tryb ciemny" : "Tryb jasny";
+      }
+
+      setTheme(document.documentElement.dataset.theme || "dark");
+
+      themeToggle.addEventListener("click", () => {
+        const nextTheme =
+          document.documentElement.dataset.theme === "light" ? "dark" : "light";
+        setTheme(nextTheme);
+      });
+
+      menuToggle.addEventListener("click", () => {
+        const isOpen = headerActions.classList.toggle("is-open");
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+        menuToggle.setAttribute(
+          "aria-label",
+          isOpen ? "Zamknij menu" : "Otwórz menu"
+        );
+      });
+
+      document.querySelectorAll(".nav a").forEach((link) => {
+        link.addEventListener("click", () => {
+          headerActions.classList.remove("is-open");
+          menuToggle.setAttribute("aria-expanded", "false");
+          menuToggle.setAttribute("aria-label", "Otwórz menu");
+        });
+      });
+    </script>
+  </body>
+</html>

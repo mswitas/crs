@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>XXI Konferencja - Nowoczesne Technologie</title>
+    <meta
+      name="description"
+      content="XXI Konferencja Nowoczesne Technologie w służbie cyfrowej szkoły i administracji publicznej, 20-22 listopada 2026, Radom."
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        try {
+          document.documentElement.dataset.theme =
+            window.localStorage.getItem("theme") || "dark";
+        } catch (error) {
+          document.documentElement.dataset.theme = "dark";
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css?v=4" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Strona główna konferencji">
+        <span class="brand-mark"></span>
+        <span>XXI Konferencja</span>
+      </a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Otwórz menu"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="header-actions">
+        <nav id="main-nav" class="nav" aria-label="Nawigacja główna">
+          <a href="#news">News</a>
+          <a href="#rejestracja">Rejestracja</a>
+          <a href="#koszty">Koszty</a>
+          <a href="#faq">Informacje</a>
+        </nav>
+        <button
+          class="theme-toggle"
+          type="button"
+          aria-label="Przełącz tryb jasny i ciemny"
+          aria-pressed="false"
+        >
+          <span class="theme-icon theme-icon-sun" aria-hidden="true"></span>
+          <span class="theme-switch-track" aria-hidden="true">
+            <span class="theme-switch-thumb"></span>
+          </span>
+          <span class="theme-icon theme-icon-moon" aria-hidden="true"></span>
+          <span class="theme-toggle-text sr-only">Tryb jasny</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="XXI Konferencja Nowoczesne Technologie">
+        <picture>
+          <source
+            media="(max-width: 560px)"
+            srcset="assets/hero-konferencja-2026-mobile.png"
+          />
+          <source
+            media="(max-width: 1024px)"
+            srcset="assets/hero-konferencja-2026-tablet.png"
+          />
+          <img
+            class="hero-image"
+            src="assets/hero-konferencja-2026-v2.png"
+            alt="XXI Konferencja Nowoczesne Technologie w służbie cyfrowej szkoły i administracji publicznej, 20-22 listopada 2026"
+          />
+        </picture>
+      </section>
+
+      <section class="summary" aria-label="Najważniejsze informacje">
+        <div class="summary-item">
+          <span>Termin</span>
+          <strong>20-22 listopada 2026</strong>
+        </div>
+        <div class="summary-item">
+          <span>Miejsce</span>
+          <strong>Zespół Szkół Technicznych w Radomiu</strong>
+        </div>
+        <div class="summary-item">
+          <span>Tematyka</span>
+          <strong>Cyfrowa szkoła i administracja publiczna</strong>
+        </div>
+      </section>
+
+      <section id="news" class="section news-section">
+        <div class="section-heading">
+          <h2 class="eyebrow">News</h2>
+          <h3 class="section-title">Aktualności konferencyjne</h3>
+        </div>
+        <article class="news-post">
+          <div class="news-post-header">
+            <span class="news-label">Zaproszenie</span>
+            <h3>I Konferencja Nowego Dwudziestolecia</h3>
+            <p>
+              Nowe przestrzenie w starym miejscu. Nowe otwarcie. Nowe
+              spojrzenie.
+            </p>
+          </div>
+
+          <p>
+            Zespół Szkół Technicznych w Radomiu od ponad 20 lat tworzy
+            przestrzeń spotkania dla osób, które chcą rozwijać nowoczesną
+            edukację, technologie informacyjne i cyfrową administrację. Po
+            jubileuszowej, XX edycji naszej konferencji otwieramy kolejny
+            rozdział tej historii.
+          </p>
+          <details class="read-more">
+            <summary>
+              <span class="read-more-open">Czytaj dalej</span>
+              <span class="read-more-close">Zwiń</span>
+            </summary>
+            <div class="read-more-content">
+              <p>
+                W tym roku zapraszamy Państwa na XXI edycję konferencji, którą
+                traktujemy jako I Konferencję Nowego Dwudziestolecia. Wracamy do
+                sprawdzonego miejsca, ale z nową energią, nowymi tematami i
+                świeżym spojrzeniem na wyzwania, przed którymi stoją szkoły,
+                samorządy, uczelnie, instytucje publiczne oraz partnerzy
+                technologiczni.
+              </p>
+              <p>
+                To wydarzenie dla tych, którzy nie chcą jedynie obserwować
+                zmian, ale chcą je rozumieć, współtworzyć i odpowiedzialnie
+                wdrażać.
+              </p>
+
+              <h4>Co nas czeka?</h4>
+              <div class="news-topics">
+                <section>
+                  <h5>Nowe technologie w edukacji i administracji</h5>
+                  <p>
+                    Porozmawiamy o rozwiązaniach, które realnie zmieniają sposób
+                    pracy szkół, urzędów i instytucji. W centrum uwagi znajdą
+                    się narzędzia cyfrowe, sztuczna inteligencja, automatyzacja,
+                    cyberbezpieczeństwo, nowoczesne zarządzanie oraz praktyczne
+                    wykorzystanie technologii w codziennej pracy.
+                  </p>
+                </section>
+                <section>
+                  <h5>Wykłady, prelekcje i inspirujące wystąpienia</h5>
+                  <p>
+                    Do udziału zapraszamy ekspertów, praktyków, przedstawicieli
+                    branży IT, edukacji, administracji oraz biznesu. Będzie to
+                    okazja do poznania trendów, dobrych praktyk i konkretnych
+                    rozwiązań, które można przenieść do własnej szkoły,
+                    instytucji lub organizacji.
+                  </p>
+                </section>
+                <section>
+                  <h5>Warsztaty i sesje tematyczne</h5>
+                  <p>
+                    Konferencja to nie tylko teoria. Planujemy również
+                    praktyczne spotkania, podczas których uczestnicy będą mogli
+                    poznać narzędzia wspierające edukację, komunikację,
+                    organizację pracy, bezpieczeństwo cyfrowe i rozwój
+                    kompetencji przyszłości.
+                  </p>
+                </section>
+                <section>
+                  <h5>Spotkania i współpraca</h5>
+                  <p>
+                    Od lat siłą naszej konferencji są ludzie: dyrektorzy szkół,
+                    nauczyciele, przedstawiciele samorządów, uczelni, firm
+                    technologicznych i instytucji publicznych. Tegoroczna edycja
+                    będzie kolejną okazją do rozmów, wymiany doświadczeń i
+                    budowania współpracy.
+                  </p>
+                </section>
+              </div>
+
+              <h4>Dlaczego warto być z nami?</h4>
+              <p>
+                Bo po 20 latach nie kończymy tej historii - zaczynamy jej nowy
+                etap. To będzie konferencja o przyszłości, ale mocno osadzona w
+                praktyce. O technologii, ale zawsze w kontekście człowieka. O
+                zmianie, ale takiej, która ma sens i służy edukacji,
+                administracji oraz lokalnym społecznościom.
+              </p>
+              <p>
+                Jeśli interesuje Państwa cyfrowa transformacja, nowoczesna
+                szkoła, sztuczna inteligencja, bezpieczeństwo, kompetencje
+                przyszłości i praktyczne rozwiązania dla edukacji oraz
+                instytucji publicznych - zapraszamy do Radomia.
+              </p>
+
+              <h4>Rejestracja</h4>
+              <p>
+                Formularz rejestracyjny oraz szczegółowy program konferencji
+                zostaną opublikowane na stronie internetowej wydarzenia.
+                Zachęcamy do śledzenia aktualności - wkrótce przedstawimy
+                agendę, prelegentów oraz informacje organizacyjne.
+              </p>
+
+              <p class="news-closing">
+                Zapraszamy do udziału w wydarzeniu, które od dwóch dekad łączy
+                edukację, technologię i ludzi otwartych na rozwój. Do zobaczenia
+                w Zespole Szkół Technicznych w Radomiu!
+              </p>
+            </div>
+          </details>
+        </article>
+      </section>
+
+      <section id="rejestracja" class="section split-section">
+        <div class="section-heading">
+          <h2 class="eyebrow">Jak wziąć udział?</h2>
+          <h3 class="section-title">Rejestracja uczestnika</h3>
+        </div>
+        <div class="content-panel">
+          <p>
+            Należy wypełnić formularz dostępny na stronie w odnośniku
+            <strong>REJESTRACJA</strong>. Po uzupełnieniu formularza otrzymasz
+            informację zwrotną.
+          </p>
+
+          <p>
+            Następnie oczekujemy na wpłatę, która potwierdza chęć uczestnictwa w
+            konferencji.
+          </p>
+          <a
+            class="button"
+            href="rejestracja.html"
+            aria-label="Przejdź do strony rejestracji"
+            >Rejestracja</a
+          >
+        </div>
+      </section>
+
+      <section id="koszty" class="section">
+        <div class="section-heading">
+          <h2 class="eyebrow">Ile kosztuje konferencja?</h2>
+          <h3 class="section-title">Pakiety udziału</h3>
+        </div>
+        <div class="pricing-grid">
+          <article class="price-card">
+            <span>3 dni</span>
+            <h3>Bez noclegu</h3>
+            <strong>550 zł</strong>
+          </article>
+          <article class="price-card">
+            <span>3 dni</span>
+            <h3>Dwa noclegi</h3>
+            <strong>710 zł</strong>
+          </article>
+          <article class="price-card">
+            <span>3 dni</span>
+            <h3>Trzy noclegi</h3>
+            <strong>770 zł</strong>
+          </article>
+          <article class="price-card">
+            <span>3 dni</span>
+            <h3>Trzy noclegi i śniadanie w piątek</h3>
+            <strong>810 zł</strong>
+          </article>
+        </div>
+      </section>
+
+      <section id="faq" class="section faq-section">
+        <div class="section-heading">
+          <h2 class="eyebrow">Informacje</h2>
+          <h3 class="section-title">Organizacja konferencji</h3>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Jak wpłacać pieniądze?</summary>
+            <p>Po wykonaniu rejestracji należy dokonać wpłaty na konto:</p>
+            <strong class="account-number"
+              >83 1240 3259 1111 0010 3720 2317</strong
+            >
+            <p>
+              W tytule przelewu prosimy wpisać
+              <strong>„KONFERENCJA 2026”</strong> oraz imię i nazwisko
+              uczestnika.
+            </p>
+            <p>
+              W sprawie płatności można kontaktować się z księgowością ZST pod
+              numerem
+              <a href="tel:+48483628185">+48 48 362 81 85</a>.
+            </p>
+          </details>
+          <details>
+            <summary>Gdzie odbywa się konferencja?</summary>
+            <p>
+              Konferencja odbywa się w budynku Zespołu Szkół Technicznych im.
+              Tadeusza Kościuszki w Radomiu przy ul. Limanowskiego 26/30. Szkoła
+              znajduje się w odległości około 2 km od dworca PKP i PKS. Dla
+              zmotoryzowanych uczestników udostępniony będzie parking na terenie
+              szkoły.
+            </p>
+          </details>
+          <details>
+            <summary>Jakie są warunki noclegowe?</summary>
+            <p>
+              Dla uczestników przygotowane są miejsca noclegowe w Schronisku
+              Młodzieżowym przy ul. Limanowskiego 34/40, w sąsiedztwie Zespołu
+              Szkół Technicznych.
+            </p>
+            <p>
+              Strona schroniska:
+              <a href="https://www.ssmradom.pl" target="_blank" rel="noreferrer"
+                >www.ssmradom.pl</a
+              >.
+            </p>
+          </details>
+          <details>
+            <summary>Czy za uczestnictwo będą wystawiane faktury?</summary>
+            <p>
+              Rachunek za udział w konferencji wystawiany jest wyłącznie na
+              płatnika. Jeśli opłatę wykona uczestnik jako osoba prywatna,
+              rachunek zostanie wystawiony na osobę prywatną. Jeśli płatności
+              dokona szkoła, rachunek zostanie wystawiony na szkołę.
+            </p>
+          </details>
+          <details>
+            <summary>
+              Skąd będę wiedzieć, że jestem uczestnikiem konferencji?
+            </summary>
+            <p>
+              Po dokonaniu opłaty każdy zarejestrowany uczestnik otrzyma
+              potwierdzenie pocztą elektroniczną na adres podany podczas
+              rejestracji. Prosimy sprawdzać także folder spam. Jeśli
+              potwierdzenie nie dotrze w ciągu 7 dni od przelewu, prosimy o
+              pilny kontakt z Arturem Rudnickim.
+            </p>
+          </details>
+          <details>
+            <summary>Czy dostanę zaświadczenie o uczestnictwie?</summary>
+            <p>Tak. Zaświadczenie będzie dostępne w trakcie konferencji.</p>
+          </details>
+          <details>
+            <summary>Czy możecie wysłać oficjalne zaproszenie?</summary>
+            <p>
+              Organizatorzy nie przewidują wysyłania oficjalnych zaproszeń.
+              Jedynym zaproszeniem jest strona konferencji.
+            </p>
+          </details>
+          <details>
+            <summary>
+              Czy możliwa jest rezerwacja noclegu o wyższym standardzie?
+            </summary>
+            <p>
+              W tym roku nie ma możliwości rezerwacji noclegów o podwyższonym
+              standardzie. Uczestnik może zorganizować nocleg samodzielnie i
+              wybrać udział bez noclegu.
+            </p>
+          </details>
+          <details>
+            <summary>Czy można zrezygnować z udziału w konferencji?</summary>
+            <p>
+              Tak, jednak organizatorzy nie zawsze mają możliwość dokonania
+              zwrotu opłaty za udział w konferencji.
+            </p>
+          </details>
+          <details>
+            <summary>Kiedy można ubiegać się o zwrot opłaty?</summary>
+            <p>
+              Zwrot opłaty przewidywany jest w sytuacji potwierdzonego
+              pozytywnego wyniku testu na COVID-19 u uczestnika albo gdy
+              konferencja nie może się odbyć ze względów niezależnych od
+              organizatorów.
+            </p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        XXI Konferencja - Nowoczesne Technologie w Służbie Cyfrowej Szkoły i
+        Administracji Publicznej
+      </p>
+      <a href="#top">Wróć na górę</a>
+    </footer>
+    <script>
+      const themeToggle = document.querySelector(".theme-toggle");
+      const themeToggleText = document.querySelector(".theme-toggle-text");
+      const menuToggle = document.querySelector(".menu-toggle");
+      const headerActions = document.querySelector(".header-actions");
+
+      function saveTheme(theme) {
+        try {
+          window.localStorage.setItem("theme", theme);
+        } catch (error) {
+          return;
+        }
+      }
+
+      function setTheme(theme) {
+        document.documentElement.dataset.theme = theme;
+        saveTheme(theme);
+        const isLight = theme === "light";
+        themeToggle.setAttribute("aria-pressed", String(isLight));
+        themeToggleText.textContent = isLight ? "Tryb ciemny" : "Tryb jasny";
+      }
+
+      setTheme(document.documentElement.dataset.theme || "dark");
+
+      themeToggle.addEventListener("click", () => {
+        const nextTheme =
+          document.documentElement.dataset.theme === "light" ? "dark" : "light";
+        setTheme(nextTheme);
+      });
+
+      menuToggle.addEventListener("click", () => {
+        const isOpen = headerActions.classList.toggle("is-open");
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+        menuToggle.setAttribute(
+          "aria-label",
+          isOpen ? "Zamknij menu" : "Otwórz menu",
+        );
+      });
+
+      document.querySelectorAll(".nav a").forEach((link) => {
+        link.addEventListener("click", () => {
+          headerActions.classList.remove("is-open");
+          menuToggle.setAttribute("aria-expanded", "false");
+          menuToggle.setAttribute("aria-label", "Otwórz menu");
+        });
+      });
+    </script>
+  </body>
+</html>
