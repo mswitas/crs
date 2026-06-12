@@ -657,6 +657,45 @@ details {
   margin-top: 1.5rem;
 }
 
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.partners-group {
+  margin-top: 1.8rem;
+}
+
+.partners-group + .partners-group {
+  margin-top: 2.4rem;
+}
+
+.partner-logo-card {
+  display: flex;
+  min-height: 8rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: var(--shadow);
+  text-decoration: none;
+}
+
+.partner-logo-card img {
+  display: block;
+  max-width: 100%;
+  max-height: 4.2rem;
+  object-fit: contain;
+}
+
+a.partner-logo-card:hover {
+  border-color: var(--cyan);
+  transform: translateY(-0.08rem);
+}
+
 details {
   padding: 1.1rem 1.25rem;
 }
@@ -737,13 +776,19 @@ details p {
     border-bottom: 0;
   }
 
+
   .summary,
   .intro,
   .split-section,
   .pricing-grid,
   .registration-layout,
+  .partners-grid,
   .news-topics {
     grid-template-columns: 1fr;
+  }
+
+  .partners-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .summary {
@@ -760,6 +805,10 @@ details p {
 @media (max-width: 560px) {
   .brand {
     font-size: 0.86rem;
+  }
+
+  .partners-grid {
+    grid-template-columns: 1fr;
   }
 
   .site-footer {
