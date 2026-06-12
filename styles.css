@@ -289,12 +289,21 @@ html[data-theme="dark"] .theme-icon-moon {
   z-index: 2;
 }
 
+html[data-theme="light"] .summary {
+  margin-top: -2.3rem;
+  padding-top: 0;
+}
+
 .summary-item {
   min-height: 8rem;
   padding: 1.35rem;
   border: 1px solid var(--line);
   background: var(--summary-bg);
   box-shadow: var(--shadow);
+}
+
+html[data-theme="light"] .summary-item {
+  background: #ffffff;
 }
 
 .summary-item span,
