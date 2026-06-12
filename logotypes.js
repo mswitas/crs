@@ -7,14 +7,14 @@ const logotypesArray = [
         supportType: partner,
         imgPath: "./assets/logotypes/i3connect.png",
         companyName: "i3connect",
-        companyURL: ""
+        companyURL: "https://i3-connect.com/"
     },
     {
         id: 2,
         supportType: partner,
         imgPath: "./assets/logotypes/modi.png",
         companyName: "Modi",
-        companyURL: ""
+        companyURL: "https://modi.edu.pl/"
     },
     {
         id: 3,
@@ -28,42 +28,42 @@ const logotypesArray = [
         supportType: partner,
         imgPath: "./assets/logotypes/promethean.png",
         companyName: "promethean",
-        companyURL: ""
+        companyURL: "https://prometheanworld.pl/"
     },
     {
         id: 5,
         supportType: partner,
         imgPath: "./assets/logotypes/vcloudpoint.png",
         companyName: "vcloudpoint",
-        companyURL: ""
+        companyURL: "https://vcloudpoint.pl/"
     },
     {
         id: 6,
         supportType: strategicPartner,
         imgPath: "./assets/logotypes/aid.jpg",
         companyName: "aid",
-        companyURL: ""
+        companyURL: "https://aid.ab.pl/"
     },
     {
         id: 7,
         supportType: partner,
         imgPath: "./assets/logotypes/Intel.png",
         companyName: "Intel",
-        companyURL: "" 
+        companyURL: "https://www.intel.pl/content/www/pl/pl/homepage.html" 
     },
     {
         id: 8,
         supportType: partner,
         imgPath: "./assets/logotypes/copilot.jpg",
         companyName: "Copilot",
-        companyURL: "" 
+        companyURL: "https://www.microsoft.com/pl-pl/windows/copilot-plus-pcs?r=1" 
     },
     {
         id: 9,
         supportType: partner,
         imgPath: "./assets/logotypes/windows11pro.jpg",
         companyName: "Intel",
-        companyURL: "" 
+        companyURL: "https://www.microsoft.com/pl-pl/windows/business/windows-11-pro#Benefits" 
     }
 ];
 
