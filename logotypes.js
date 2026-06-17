@@ -64,6 +64,20 @@ const logotypesArray = [
         imgPath: "./assets/logotypes/windows11pro.jpg",
         companyName: "Intel",
         companyURL: "https://www.microsoft.com/pl-pl/windows/business/windows-11-pro#Benefits" 
+    },
+    {
+        id: 10,
+        supportType: partner,
+        imgPath: "./assets/logotypes/moje-bambino.jpg",
+        companyName: "Moje Bambino",
+        companyURL: "https://mojebambino.pl/" 
+    },
+    {
+        id: 11,
+        supportType: partner,
+        imgPath: "./assets/logotypes/educarium.png",
+        companyName: "Intel",
+        companyURL: "https://educarium.pl/" 
     }
 ];
 
