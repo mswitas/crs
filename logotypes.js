@@ -78,7 +78,36 @@ const logotypesArray = [
         imgPath: "./assets/logotypes/educarium.png",
         companyName: "Intel",
         companyURL: "https://educarium.pl/" 
+    },
+    {
+        id: 12,
+        supportType: partner,
+        imgPath: "./assets/logotypes/suncode.png",
+        companyName: "Suncode",
+        companyURL: "https://suncode.pl/" 
+    },
+    {
+        id: 13,
+        supportType: partner,
+        imgPath: "./assets/logotypes/agraf.png",
+        companyName: "Agraf",
+        companyURL: "https://agraf.com.pl/" 
+    },
+    {
+        id: 14,
+        supportType: partner,
+        imgPath: "./assets/logotypes/wacom.png",
+        companyName: "Wacom",
+        companyURL: "https://wacom.pl" 
+    },
+    {
+        id: 15,
+        supportType: partner,
+        imgPath: "./assets/logotypes/alstor.png",
+        companyName: "Alstor",
+        companyURL: "https://alstor.pl" 
     }
+
 ];
 
 function createPartnerLogoCard(partnerItem) {
