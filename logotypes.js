@@ -106,6 +106,13 @@ const logotypesArray = [
         imgPath: "./assets/logotypes/alstor.png",
         companyName: "Alstor",
         companyURL: "https://alstor.pl" 
+    },
+    {
+        id: 16,
+        supportType: partner,
+        imgPath: "./assets/logotypes/migra.png",
+        companyName: "Migra",
+        companyURL: "https://migra.pl" 
     }
 
 ];
