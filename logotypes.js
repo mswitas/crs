@@ -113,6 +113,20 @@ const logotypesArray = [
         imgPath: "./assets/logotypes/migra.png",
         companyName: "Migra",
         companyURL: "https://migra.pl" 
+    },
+    {
+        id: 17,
+        supportType: strategicPartner,
+        imgPath: "./assets/logotypes/KM_logo.jpeg",
+        companyName: "KonicaMinolta",
+        companyURL: "https://www.konicaminolta.pl" 
+    },
+    {
+        id: 18,
+        supportType: partner,
+        imgPath: "./assets/logotypes/nowa_era.png",
+        companyName: "Nowa Era",
+        companyURL: "https://www.nowaera.pl/" 
     }
 
 ];
