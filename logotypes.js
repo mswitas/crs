@@ -127,6 +127,27 @@ const logotypesArray = [
         imgPath: "./assets/logotypes/nowa_era.png",
         companyName: "Nowa Era",
         companyURL: "https://www.nowaera.pl/" 
+    },
+    {
+        id: 19,
+        supportType: partner,
+        imgPath: "./assets/logotypes/learnetic.png",
+        companyName: "Learnetic",
+        companyURL: "https://www.learnetic.pl/" 
+    },
+    {
+        id: 20,
+        supportType: partner,
+        imgPath: "./assets/logotypes/musicon.png",
+        companyName: "Musicon",
+        companyURL: "https://musiconclub.com/" 
+    },
+    {
+        id: 21,
+        supportType: partner,
+        imgPath: "./assets/logotypes/canva.png",
+        companyName: "Canva",
+        companyURL: "https://www.canva.com/pl_pl/" 
     }
 
 ];
