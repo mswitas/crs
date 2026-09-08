@@ -148,6 +148,20 @@ const logotypesArray = [
         imgPath: "./assets/logotypes/canva.png",
         companyName: "Canva",
         companyURL: "https://www.canva.com/pl_pl/" 
+    },
+    {
+        id: 22,
+        supportType: partner,
+        imgPath: "./assets/logotypes/mactechnologie.png",
+        companyName: "Mac",
+        companyURL: "https://www.mac.pl/" 
+    },
+    {
+        id: 23,
+        supportType: partner,
+        imgPath: "./assets/logotypes/logoLibrus.png",
+        companyName: "Librus",
+        companyURL: "https://www.librus.pl/" 
     }
 
 ];
