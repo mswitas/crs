@@ -190,6 +190,13 @@ const logotypesArray = [
         imgPath: "./assets/logotypes/nexineo.png",
         companyName: "Nexineo",
         companyURL: "https://www.nexineo.com/pl" 
+    },
+    {
+        id: 28,
+        supportType: partner,
+        imgPath: "./assets/logotypes/oeiizk.jpg",
+        companyName: "OEIiZK",
+        companyURL: "https://www.oeiizk.waw.pl/" 
     }
 
 ];
