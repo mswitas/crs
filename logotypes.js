@@ -162,6 +162,34 @@ const logotypesArray = [
         imgPath: "./assets/logotypes/logoLibrus.png",
         companyName: "Librus",
         companyURL: "https://www.librus.pl/" 
+    },
+    {
+        id: 24,
+        supportType: partner,
+        imgPath: "./assets/logotypes/aktin-przyszlosc.png",
+        companyName: "Aktin",
+        companyURL: "https://aktin.pl/" 
+    },
+    {
+        id: 25,
+        supportType: partner,
+        imgPath: "./assets/logotypes/interaktin.png",
+        companyName: "InterAktin",
+        companyURL: "https://aktin.pl/" 
+    },
+    {
+        id: 26,
+        supportType: partner,
+        imgPath: "./assets/logotypes/classVR.png",
+        companyName: "ClassVR",
+        companyURL: "https://www.classvr.com/pl/" 
+    },
+    {
+        id: 27,
+        supportType: partner,
+        imgPath: "./assets/logotypes/nexineo.png",
+        companyName: "Nexineo",
+        companyURL: "https://www.nexineo.com/pl" 
     }
 
 ];
