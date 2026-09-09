@@ -197,6 +197,13 @@ const logotypesArray = [
         imgPath: "./assets/logotypes/oeiizk.jpg",
         companyName: "OEIiZK",
         companyURL: "https://www.oeiizk.waw.pl/" 
+    },
+    {
+        id: 29,
+        supportType: partner,
+        imgPath: "./assets/logotypes/nowa-szkola.jpg",
+        companyName: "Nowa Szkoła",
+        companyURL: "https://nowaszkola.com/nowe-dofinansowania-rzadowe" 
     }
 
 ];
