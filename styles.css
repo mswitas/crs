@@ -681,6 +681,10 @@ details {
   margin-top: 2.4rem;
 }
 
+.partners-group + .section-heading {
+  margin-top: 3rem;
+}
+
 .partner-logo-card {
   display: flex;
   min-height: 8rem;

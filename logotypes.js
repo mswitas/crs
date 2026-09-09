@@ -240,7 +240,7 @@ function createPartnerLogoCard(partnerItem) {
     return wrapper;
 }
 
-function createPartnerGroup(title, items) {
+function createPartnerGroup(title, items, headingLevel = 3, headingClass = "section-title") {
     if (items.length === 0) {
         return null;
     }
@@ -248,8 +248,8 @@ function createPartnerGroup(title, items) {
     const group = document.createElement("div");
     group.className = "partners-group";
 
-    const heading = document.createElement("h3");
-    heading.className = "section-title";
+    const heading = document.createElement(`h${headingLevel}`);
+    heading.className = headingClass;
     heading.textContent = title;
 
     const grid = document.createElement("div");
@@ -303,6 +303,8 @@ function renderPartnerLogotypes() {
         group.remove();
     });
 
+    const partnersHeading = partnersSection.querySelector(".section-heading");
+
     const honoraryPatronages = logotypesArray.filter((logotype) => {
         return logotype.supportType === honoraryPatronage && logotype.imgPath;
     });
@@ -315,17 +317,27 @@ function renderPartnerLogotypes() {
         return logotype.supportType === partner && logotype.imgPath;
     });
 
-    const groups = [
-        createPartnerGroup("Patronat Honorowy", sortByDisplayOrder(honoraryPatronages)),
+    const honoraryPatronageGroup = createPartnerGroup(
+        "Patronat Honorowy",
+        sortByDisplayOrder(honoraryPatronages),
+        2,
+        "eyebrow",
+    );
+
+    if (honoraryPatronageGroup && partnersHeading) {
+        partnersSection.insertBefore(honoraryPatronageGroup, partnersHeading);
+    }
+
+    const partnerGroups = [
         createPartnerGroup("Partnerzy strategiczni", shuffleLogotypes(strategicPartners)),
         createPartnerGroup("Partnerzy konferencji", shuffleLogotypes(conferencePartners)),
     ].filter(Boolean);
 
-    if (groups.length === 0) {
+    if (partnerGroups.length === 0) {
         return;
     }
 
-    partnersSection.append(...groups);
+    partnersSection.append(...partnerGroups);
 }
 
 if (document.readyState === "loading") {
