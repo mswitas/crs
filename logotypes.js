@@ -1,5 +1,6 @@
 const partner = "partner";
 const strategicPartner = "strategic-partner";
+const honoraryPatronage = "honorary-patronage";
 
 const logotypesArray = [
     {
@@ -204,6 +205,13 @@ const logotypesArray = [
         imgPath: "./assets/logotypes/nowa-szkola.jpg",
         companyName: "Nowa Szkoła",
         companyURL: "https://nowaszkola.com/nowe-dofinansowania-rzadowe" 
+    },
+    {
+        id: 30,
+        supportType: honoraryPatronage,
+        imgPath: "./assets/logotypes/ministra_edukacji.png",
+        companyName: "Nowa Szkoła",
+        companyURL: "https://www.gov.pl/web/edukacja" 
     }
 
 ];
@@ -256,7 +264,31 @@ function createPartnerGroup(title, items) {
 }
 
 function shuffleLogotypes(items) {
-    return [...items].sort(() => Math.random() - 0.5);
+    const shuffled = [...items];
+
+    for (let index = shuffled.length - 1; index > 0; index -= 1) {
+        const randomIndex = Math.floor(Math.random() * (index + 1));
+        [shuffled[index], shuffled[randomIndex]] = [shuffled[randomIndex], shuffled[index]];
+    }
+
+    return shuffled;
+}
+
+function sortByDisplayOrder(items) {
+    return [...items].sort((firstItem, secondItem) => {
+        const firstOrder = Number.isFinite(firstItem.displayOrder)
+            ? firstItem.displayOrder
+            : Number.MAX_SAFE_INTEGER;
+        const secondOrder = Number.isFinite(secondItem.displayOrder)
+            ? secondItem.displayOrder
+            : Number.MAX_SAFE_INTEGER;
+
+        if (firstOrder !== secondOrder) {
+            return firstOrder - secondOrder;
+        }
+
+        return firstItem.id - secondItem.id;
+    });
 }
 
 function renderPartnerLogotypes() {
@@ -270,6 +302,10 @@ function renderPartnerLogotypes() {
         group.remove();
     });
 
+    const honoraryPatronages = logotypesArray.filter((logotype) => {
+        return logotype.supportType === honoraryPatronage && logotype.imgPath;
+    });
+
     const strategicPartners = logotypesArray.filter((logotype) => {
         return logotype.supportType === strategicPartner && logotype.imgPath;
     });
@@ -279,6 +315,7 @@ function renderPartnerLogotypes() {
     });
 
     const groups = [
+        createPartnerGroup("Patronat Honorowy", sortByDisplayOrder(honoraryPatronages)),
         createPartnerGroup("Partnerzy strategiczni", shuffleLogotypes(strategicPartners)),
         createPartnerGroup("Partnerzy konferencji", shuffleLogotypes(conferencePartners)),
     ].filter(Boolean);
