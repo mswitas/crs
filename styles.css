@@ -167,6 +167,34 @@ a {
   gap: clamp(0.8rem, 2vw, 1.4rem);
 }
 
+.social-link {
+  display: inline-flex;
+  width: 2.55rem;
+  height: 2.55rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  background: var(--panel-strong);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.social-link:hover {
+  border-color: var(--cyan);
+  color: var(--cyan);
+}
+
+.social-link:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 0.25rem;
+}
+
+.social-link svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  fill: currentColor;
+}
+
 .theme-toggle {
   display: inline-flex;
   align-items: center;
