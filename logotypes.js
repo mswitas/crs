@@ -211,7 +211,8 @@ const logotypesArray = [
         supportType: honoraryPatronage,
         imgPath: "./assets/logotypes/ministra_edukacji.png",
         companyName: "Nowa Szkoła",
-        companyURL: "https://www.gov.pl/web/edukacja" 
+        companyURL: "https://www.gov.pl/web/edukacja",
+        displayOrder: 10
     }
 
 ];
